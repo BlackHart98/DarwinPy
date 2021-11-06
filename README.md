@@ -10,24 +10,28 @@ few lines of code.
 ### Genetics Classes (DarwinPy.Genetics.Genetics)
 
 #### Methods
-setSearchSpace
-setChromosomeLength
-setPopulationSize
-setChromosomeMatrix
-getChromosomeMatrix
-getSearchSpace
-crossover
-select
-mutate
-evolve
+| Identifier | Type |
+| ------------ | ---------- |
+| setSearchSpace | None |
+|setChromosomeLength| None |
+|setPopulationSize| None |
+|setChromosomeMatrix| None |
+|getChromosomeMatrix| numpy.array |
+|getSearchSpace| tuple |
+|crossover| None |
+|select| None |
+|mutate| None |
+|evolve| None |
 
 #### Attributes
-chromosome_length
-population_size
-search_space
-chromosome_matrix
-pair_list
-data_type
+| Identifier | Type |
+| ------------ | ---------- |
+|chromosome_length | int |
+|population_size | int |
+|search_space | tuple |
+|chromosome_matrix | numpy.array |
+|pair_list | list |
+|data_type | type |
 
 
 
