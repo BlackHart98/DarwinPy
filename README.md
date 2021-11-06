@@ -1,7 +1,37 @@
 # DarwinPy
-A evolutionary computation module built with python
 
-Sample DarwinPy implementation
+## Introduction
+DarwinPy is an evolutionary computation module built with python, to enable you to easily
+implement evolutionary methods such as genetics algorithm and evolutionary strategies with
+few lines of code.
+
+## Classes in DarwinPy
+
+### Genetics Classes (DarwinPy.Genetics.Genetics)
+
+#### Methods
+setSearchSpace
+setChromosomeLength
+setPopulationSize
+setChromosomeMatrix
+getChromosomeMatrix
+getSearchSpace
+crossover
+select
+mutate
+evolve
+
+#### Attributes
+chromosome_length
+population_size
+search_space
+chromosome_matrix
+pair_list
+data_type
+
+
+
+## Sample DarwinPy implementation
 ```python
 
 import DarwinPy
