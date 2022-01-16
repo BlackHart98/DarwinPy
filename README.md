@@ -7,8 +7,8 @@ few lines of code.
 
 ## Installing DarwinPy
 DarwinPy can be installed with the command below
- ``` pip install DarwinPy
- ```
+ ` pip install DarwinPy
+ `
 
 ## Classes in DarwinPy
 
