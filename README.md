@@ -1,107 +1,57 @@
 # DarwinPy
 
-## Introduction
-DarwinPy is an evolutionary computation module built with python, to enable you to easily
-implement evolutionary methods such as genetics algorithm and evolutionary strategies with
-few lines of code.
+ ## Introduction
+DarwinPy is a Python-based evolutionary computation module that makes it easy to implement evolutionary methods such as genetic algorithms and evolutionary strategies with only a few lines of code.
 
 ## Installing DarwinPy
-DarwinPy can be installed with the command below
- ` pip install DarwinPy
- `
+DarwinPy can be installed with the command `pip install DarwinPy`.
 
 ## Classes in DarwinPy
+Genetics Classes (`DarwinPy.Genetics.Genetics`)
 
-### Genetics Classes (DarwinPy.Genetics.Genetics)
+**Methods:**
+* `setSearchSpace(search_space)`: Sets the `search_space` attribute of the DarwinPy object.
+* `setChromosomeLength(chromosome_length)`: Sets the `chromosome_length` attribute of the DarwinPy object.
+* `setPopulationSize(population_size)`: Sets the `population_size` attribute of the DarwinPy object.
+* `setChromosomeMatrix(search_space)`: Sets the `chromosome_matrix` attribute of the DarwinPy object.
+* `getChromosomeMatrix()`: Returns the `chromosome_matrix` attribute, which is a NumPy array.
+* `getSearchSpace()`: Returns the `search_space` attribute, which is a tuple.
+* `populate()`: Initializes the `chromosome_matrix` attribute with initial values or gene population.
+* `select(fitness_vector)`: Selects mating pairs based on the fitness.
+* `crossover(crossover_rate)`: Mates selected pairs and updates the `chromosome_matrix` attribute.
+* `mutate(mutation_rate)`: Mutates the `chromosome_matrix` attribute of the DarwinPy object.
+* `evolve(fitness_vector, mutation_rate, crossover_rate)`: Performs a complete genetic algorithm cycle, which includes selection, crossover, and mutation.
 
-#### Methods
+| Identifier | Type      |
+|------------|-----------|
+| `setSearchSpace`      | `None`     |
+| `setChromosomeLength` | `None`     |
+| `setPopulationSize`   | `None`     |
+| `setChromosomeMatrix` | `None`     |
+| `getChromosomeMatrix` | `numpy.array` |
+| `getSearchSpace`      | `tuple`    |
+| `populate`            | `None`     |
+| `select`              | `None`     |
+| `crossover`           | `None`     |
+| `mutate`              | `None`     |
+| `evolve`              | `None`     |
 
-DarwinPy.Genetics.Genetics.**setSearchSpace**(search_space)
-Sets the search_space attribute of the DarwinPy object.
+**Attributes:**
+* `chromosome_length`: The length of each chromosome in the DarwinPy object.
+* `population_size`: The size of the population in the DarwinPy object.
+* `search_space`: The search space for the genetic algorithm, which is a tuple with an upper and lower bound.
+* `chromosome_matrix`: The array of chromosomes in the DarwinPy object.
+* `pair_list`: The list of mating pairs.
+* `data_type`: The data type in which the genetic algorithm is bounded.
 
-DarwinPy.Genetics.Genetics.**setChromosomeLength**(chromosome_length)
-Sets the chromosome_length attribute of the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**setPopulationSize**(population_size)
-Sets the population_size attribute of the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**setChromosomeMatrix**(search_space)
-Sets the chromosome_matrix attribute of the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**getChromosomeMatrix**()
-Returns the chromosome_matrix which is a numpy array.
-
-DarwinPy.Genetics.Genetics.**getSearchSpace**()
-Returns the search_space which is tuple (more specifically a pair).
-
-DarwinPy.Genetics.Genetics.**populate**()
-Sets the initial values in the chromosome_matrix attribute or more specifically initialize the gene population.
-
-DarwinPy.Genetics.Genetics.**select**(fitness_vector)
-Selects mating pairs with respect the fitness.
-
-DarwinPy.Genetics.Genetics.**crossover**(crossover_rate)
-Performs mating between two selected mating pairs, which in turn updates the chromosome_matrix attribute
-
-DarwinPy.Genetics.Genetics.**mutate**(mutation_rate)
-Mutates the chromosome_matrix attribute of the DarwinPy object.
-
-
-DarwinPy.Genetics.Genetics.**evolve**(fitness_vector, mutation_rate, crossover_rate)
-Performs the a complete genetic algorithm cycle, which includes selection, crossover and mutation.
-
-
-
-
-| Identifier | Type |
-| ------------ | ---------- |
-| setSearchSpace | None |
-|setChromosomeLength| None |
-|setPopulationSize| None |
-|setChromosomeMatrix| None |
-|getChromosomeMatrix| numpy.array |
-|getSearchSpace| tuple |
-|populate | None|
-|select| None |
-|crossover| None |
-|mutate| None |
-|evolve| None |
-Table 1. Methods and their respective return type
-
-
-#### Attributes
-
-DarwinPy.Genetics.Genetics.**chromosome_length**
-The length of each chromosome in the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**population_size**
-The size of the population in the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**search_space**
-The search space for the genetic algorithm which is a tuple with a upper and lower bound.
-
-DarwinPy.Genetics.Genetics.**chromosome_matrix**
-The array of chromosome in the DarwinPy object.
-
-DarwinPy.Genetics.Genetics.**pair_list**
-The list of mating pairs.
-
-DarwinPy.Genetics.Genetics.**data_type**
-The data type in which the genetic algorithm is bounded within.
-
-
-
-
-| Identifier | Type |
-| ------------ | ---------- |
-|chromosome_length | int |
-|population_size | int |
-|search_space | tuple |
-|chromosome_matrix | numpy.array |
-|pair_list | list |
-|data_type | type |
-Table 2. Attributes and their respective data type
-
+| Identifier           | Type          |
+|----------------------|---------------|
+| `chromosome_length`   | `int`         |
+| `population_size`     | `int`         |
+| `search_space`        | `tuple`       |
+| `chromosome_matrix`   | `numpy.array` |
+| `pair_list`           | `list`        |
+| `data_type`           | `type`        |
 
 ## A Sample DarwinPy implementation
 ```python
