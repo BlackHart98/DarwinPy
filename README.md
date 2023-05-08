@@ -79,36 +79,33 @@ if __name__ == "__main__":
 
     mouse_species = DarwinPy.Genetics.Genetics(chromosome_length,
     mouse_population, (0,1), int)
-    print("mouse species instantiated:\n {}".format(mouse_species))
+    print(f"mouse species instantiated:\n {mouse_species}")
 
     print("the goal:\n {}".format(goal))
 
     mouse_species.populate()
-    print("get mouse matrix(GA):\n {}".
-    format(mouse_species.getChromosomeMatrix()))
+    print(f"get mouse matrix(GA):\n {mouse_species.getChromosomeMatrix()}")
 
 
     fitness_vector = np.array(
     hammingDist(goal,mouse_species.getChromosomeMatrix()),
     float)
 
-    print("get fitness vector: {}".format(fitness_vector))
+    print(f"get fitness vector: {fitness_vector}")
 
     is_goal = False
     gen = 1
     while is_goal == False:
-        print("Generation #{}\n".format(gen))
+        print(f"Generation #{gen}\n")
         gen += 1
         mouse_species.evolve(fitness_vector,
         mutation_rate, 0.5)
-        print("get mouse matrix(GA):\n {}".
-        format(mouse_species.getChromosomeMatrix()))
+        print(f"get mouse matrix(GA):\n {mouse_species.getChromosomeMatrix()}")
         fitness_vector = np.array(
         hammingDist(goal,mouse_species.getChromosomeMatrix()),
         float)
 
-        print("get fitness vector: {}".format(fitness_vector))
+        print(f"get fitness vector: {fitness_vector}")
         if chromosome_length in fitness_vector:
             is_goal = True
-
 ```

@@ -38,7 +38,7 @@ if __name__ == "__main__":
     is_goal = False
     gen = 1
     while is_goal == False:
-        print("Generation #{}\n".format(gen))
+        print(f"Generation #{gen}\n")
         gen += 1
         mouse_species.evolve(fitness_vector,
         mutation_rate, 0.5)
