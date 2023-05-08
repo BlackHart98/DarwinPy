@@ -1,12 +1,22 @@
 Metadata-Version: 2.1
 Name: DarwinPy
-Version: 0.0.1
+Version: 0.0.2
 Summary: A evolutionary computation module
 Home-page: UNKNOWN
 Author: Pius Arhanbhunde
 Author-email: pjacks419@gmail.com
 License: MIT License
-Description: # DarwinPy
+Keywords: evolution
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DarwinPy
 
  ## Introduction
 DarwinPy is a Python-based evolutionary computation module that makes it easy to implement evolutionary methods such as genetic algorithms and evolutionary strategies with only a few lines of code.
@@ -118,20 +128,12 @@ if __name__ == "__main__":
             is_goal = True
 ```
 
-        
-        
-        Change Log
-        ==========
-        
-        0.0.1 (10/10/2021)
-        ------------------
-        - First Release
-        
-Keywords: evolution
-Platform: UNKNOWN
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Developers
-Classifier: Operating System :: Microsoft :: Windows :: Windows 10
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3
-Description-Content-Type: text/markdown
+
+Change Log
+==========
+
+0.0.1 (10/10/2021)
+------------------
+- First Release
+
+

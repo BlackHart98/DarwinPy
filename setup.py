@@ -11,7 +11,7 @@ classifiers = [
 
 setup(
 name = "DarwinPy",
-version = "0.0.1",
+version = "0.0.2",
 description = "A evolutionary computation module",
 long_description = open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
 long_description_content_type = "text/markdown",
