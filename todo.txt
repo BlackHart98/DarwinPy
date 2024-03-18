@@ -2,4 +2,4 @@ Implement asynchrony
 Implement diverse crossover and mutation strategies
 Implement parallel processing
 Implement migration
-Add a wrapper to simplify the methods in DarwinPyAsync (implementing function overloading)
+Add a wrapper to simplify the methods in DarwinPyAsync (implementing fluent interface)
